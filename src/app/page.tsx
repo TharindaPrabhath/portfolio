@@ -1,7 +1,9 @@
+import Header from "@/components/header";
+
 export default function Home() {
   return (
-    <main>
-      <h1>Tharinda Anurajeewa</h1>
+    <main className="h-full bg-neutral-50">
+      <Header />
     </main>
   );
 }
