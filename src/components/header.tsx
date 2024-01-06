@@ -8,9 +8,15 @@ import { Menu } from "lucide-react";
 
 function Header() {
   return (
-    <header className="container flex flex-row items-center justify-between py-4 md:py-8">
+    <div className="container flex flex-row items-center justify-between py-4 md:py-8">
       <Link href="/">
-        <Image src="/logo.svg" alt="Logo" width={150} height={80} />
+        <Image
+          src="/logo.svg"
+          alt="Logo"
+          width={150}
+          height={80}
+          className="w-24"
+        />
       </Link>
 
       <nav className="hidden flex-row items-center gap-12 md:flex">
@@ -24,7 +30,7 @@ function Header() {
       <Button variant="ghost" size="icon" className="md:hidden">
         <Menu className="w-8 h-8" />
       </Button>
-    </header>
+    </div>
   );
 }
 
