@@ -18,9 +18,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`bg-neutral-50 ${poppins.className}`}>
+      <body className={`flex flex-col bg-neutral-50 ${poppins.className}`}>
         <Header />
-        <main className="">{children}</main>
+        <main className="flex-1">{children}</main>
       </body>
     </html>
   );
