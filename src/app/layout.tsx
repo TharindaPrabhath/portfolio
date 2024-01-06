@@ -9,8 +9,87 @@ import Header from "@/components/header";
 const poppins = Poppins({ weight: ["400", "600", "800"], subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Tharinda Anurajeewa | Developer",
-  description: "Personal website of Tharinda Anurajeewa",
+  title: "Tharinda Anurajeewa",
+  description: "Full Stack Developer | Entrepreneur | Freelancer",
+  generator: "Next.js",
+  applicationName: "Developer Portfolio",
+  referrer: "origin",
+  keywords: [
+    "Tharinda",
+    "Anurajeewa",
+    "developer",
+    "portfolio",
+    "website",
+    "freelancer",
+    "full stack",
+    "backend",
+    "entrepreneur",
+    "moratuwa",
+    "engineering",
+    "mechanical engineering",
+    "undergraduate",
+  ],
+  icons: {
+    icon: "/favicon-32x32.png",
+    shortcut: "/favicon-16x16.png",
+    apple: "/apple-touch-icon.png",
+    other: {
+      rel: "apple-touch-icon-precomposed",
+      url: "/apple-touch-icon.png",
+    },
+  },
+  manifest: "https://tharinda.me/manifest.json",
+  authors: [{ name: "Tharinda Anurajeewa", url: "https://tharinda.me" }],
+  creator: "Tharinda Anurajeewa",
+  publisher: "Vercel",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  openGraph: {
+    title: `Tharinda Anurajeewa`,
+    description: "Full Stack Developer | Entrepreneur | Freelancer",
+    url: "https://tharinda.me",
+    siteName: `Tharinda Anurajeewa`,
+    images: [
+      {
+        url: "https://tharinda.me/og.png", // Must be an absolute URL
+        alt: "Tharinda Anurajeewa, a Full Stack Developer, Entrepreneur and Freelancer",
+        width: 800,
+        height: 600,
+      },
+      {
+        url: "https://tharinda.me/og-2.png", // Must be an absolute URL
+        alt: "Tharinda Anurajeewa, a Full Stack Developer, Entrepreneur and Freelancer",
+        width: 1800,
+        height: 1600,
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `Tharinda's Portfolio`,
+    description: "Personal website of Tharinda Anurajeewa",
+    siteId: "1402211444603723777",
+    creator: "@tharinda__",
+    creatorId: "1402211444603723777",
+    images: [
+      {
+        url: "https://tharinda.me/og.png",
+        alt: "Tharinda Anurajeewa, a Full Stack Developer, Entrepreneur and Freelancer",
+      },
+    ], // Must be an absolute URL
+  },
+  appLinks: {
+    web: {
+      url: "https://tharinda.me",
+      should_fallback: true,
+    },
+  },
+  bookmarks: ["https://tharinda.me"],
 };
 
 export default function RootLayout({
@@ -20,26 +99,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        <link
-          rel="apple-touch-icon"
-          sizes="180x180"
-          href="/apple-touch-icon.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="32x32"
-          href="/favicon-32x32.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="16x16"
-          href="/favicon-16x16.png"
-        />
-        <link rel="manifest" href="/site.webmanifest" />
-      </head>
       <body className={`flex flex-col bg-neutral-50 ${poppins.className}`}>
         <Header />
         <main className="flex-1">
