@@ -38,7 +38,6 @@ export const metadata: Metadata = {
       url: "/apple-touch-icon.png",
     },
   },
-  manifest: "https://tharinda.me/manifest.json",
   authors: [{ name: "Tharinda Anurajeewa", url: "https://tharinda.me" }],
   creator: "Tharinda Anurajeewa",
   publisher: "Vercel",
@@ -47,6 +46,7 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
+  metadataBase: new URL("https://tharinda.me"),
   openGraph: {
     title: `Tharinda Anurajeewa`,
     description: "Full Stack Developer | Entrepreneur | Freelancer",
