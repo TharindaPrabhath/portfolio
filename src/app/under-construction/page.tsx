@@ -17,7 +17,7 @@ function UnderConstruction() {
         <Link href="/">
           <Button
             variant="outline"
-            className="bg-transparent rounded-full font-semibold text-lg mt-8 px-8 py-6 w-full md:w-fit"
+            className="bg-transparent rounded-full text-lg mt-8 px-8 py-6 w-full md:w-fit"
           >
             back to home
           </Button>
