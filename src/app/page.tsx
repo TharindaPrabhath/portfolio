@@ -10,7 +10,7 @@ import { Circle, Github, Instagram, Linkedin, Twitter } from "lucide-react";
 
 export default function Home() {
   return (
-    <div className="container min-h-full flex flex-col justify-evenly">
+    <div className="container min-h-full flex flex-col justify-evenly md:items-center">
       <div>
         <div>
           <h1 className="text-5xl font-black leading-tight mt-12">
@@ -21,9 +21,9 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="flex flex-row flex-wrap gap-2 text-lg text-stone-600 mt-8">
-          <p>i&apos;m using</p>
-          <Badge variant="outline">
+        <div className="text-lg text-stone-600 mt-8">
+          <span>i&apos;m using</span>
+          <Badge variant="outline" className="ml-1">
             <Image
               src="/nextjs-logo.png"
               alt="NextJs Logo"
@@ -33,7 +33,7 @@ export default function Home() {
             />
             NextJs
           </Badge>
-          <Badge variant="outline">
+          <Badge variant="outline" className="mx-1">
             <Image
               src="/react-logo.png"
               alt="React Logo"
@@ -43,8 +43,8 @@ export default function Home() {
             />
             React
           </Badge>
-          <p>and</p>
-          <Badge variant="outline">
+          <span>and</span>
+          <Badge variant="outline" className="mx-1">
             <Image
               src="/tailwindcss-logo.png"
               alt="Tailwind Css Logo"
@@ -54,8 +54,8 @@ export default function Home() {
             />
             Tailwind CSS
           </Badge>
-          <p>for frontend, while powering the backend with</p>
-          <Badge variant="outline">
+          <span>for frontend, while powering the backend with</span>
+          <Badge variant="outline" className="ml-1">
             <Image
               src="/nestjs-logo.png"
               alt="NestJs Logo"
@@ -65,8 +65,9 @@ export default function Home() {
             />
             Nest Js
           </Badge>
-          <p>.</p>
-          <Badge variant="outline">
+          <span>.</span>
+          <br />
+          <Badge variant="outline" className="mr-1 mt-2">
             <Image
               src="/typescript-logo.png"
               alt="Typescript Logo"
@@ -76,8 +77,8 @@ export default function Home() {
             />
             Typescript
           </Badge>
-          <p>is the language of choice.</p>
-
+          <span>is the language of choice.</span>
+          <br />
           <p className="mt-4">
             Let&apos;s code a dynamic web experience together!
           </p>
@@ -104,14 +105,14 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex flex-row items-center gap-4 mt-12 mb-12">
-        <Separator className="flex-1 bg-stone-600" />
+      <div className="flex-row items-center gap-4 mt-12 mb-12 hidden md:flex md:w-3/4">
+        <Separator className="flex-1 bg-stone-600 opacity-40" />
         <div className="flex flex-row items-center gap-1">
-          <Circle className="bg-stone-600 rounded-full text-stone-600 w-3 h-3" />
-          <Circle className="bg-stone-600 rounded-full text-stone-600 w-3 h-3" />
-          <Circle className="bg-stone-600 rounded-full text-stone-600 w-3 h-3" />
+          <Circle className="bg-stone-600 rounded-full text-stone-600 opacity-40 w-3 h-3" />
+          <Circle className="bg-stone-600 rounded-full text-stone-600 opacity-40 w-3 h-3" />
+          <Circle className="bg-stone-600 rounded-full text-stone-600 opacity-40 w-3 h-3" />
         </div>
-        <Separator className="flex-1 bg-stone-600" />
+        <Separator className="flex-1 bg-stone-600 opacity-40" />
       </div>
     </div>
   );
