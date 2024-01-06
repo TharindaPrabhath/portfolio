@@ -54,13 +54,13 @@ export const metadata: Metadata = {
     siteName: `Tharinda Anurajeewa`,
     images: [
       {
-        url: "https://tharinda.me/og.png", // Must be an absolute URL
+        url: "https://res.cloudinary.com/drifly/image/upload/v1704569134/tharinda.me/og-image.png", // Must be an absolute URL
         alt: "Tharinda Anurajeewa, a Full Stack Developer, Entrepreneur and Freelancer",
         width: 800,
         height: 600,
       },
       {
-        url: "https://tharinda.me/og-2.png", // Must be an absolute URL
+        url: "https://res.cloudinary.com/drifly/image/upload/v1704569134/tharinda.me/og-image-2.png", // Must be an absolute URL
         alt: "Tharinda Anurajeewa, a Full Stack Developer, Entrepreneur and Freelancer",
         width: 1800,
         height: 1600,
@@ -78,7 +78,7 @@ export const metadata: Metadata = {
     creatorId: "1402211444603723777",
     images: [
       {
-        url: "https://tharinda.me/og.png",
+        url: "https://res.cloudinary.com/drifly/image/upload/v1704569134/tharinda.me/og-image.png",
         alt: "Tharinda Anurajeewa, a Full Stack Developer, Entrepreneur and Freelancer",
       },
     ], // Must be an absolute URL
