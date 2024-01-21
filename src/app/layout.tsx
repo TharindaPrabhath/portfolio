@@ -104,12 +104,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        <Script src="https://custom-chat-gpt-cyan.vercel.app/chat.js"></Script>
-        <Script id="-">
-          {`window.onload = function () { ChatWidget.init("asst_2Q5TDT7wzl8zfOnPCxMhPTnn"); };`}
-        </Script>
-      </head>
       <body className={`flex flex-col bg-neutral-50 ${poppins.className}`}>
         <Header />
         <main className="flex-1">
