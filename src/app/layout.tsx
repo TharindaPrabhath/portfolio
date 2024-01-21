@@ -5,9 +5,13 @@ import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
 
 import Header from "@/components/header";
+
 import Script from "next/script";
 
-const poppins = Poppins({ weight: ["400", "600", "800"], subsets: ["latin"] });
+const poppins = Poppins({
+  weight: ["400", "600", "800", "800"],
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "Tharinda Anurajeewa",
