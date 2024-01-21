@@ -106,7 +106,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <Script src="https://custom-chat-gpt-cyan.vercel.app/chat.js"></Script>
-        <Script id="">
+        <Script id="-">
           {`window.onload = function () { ChatWidget.init("asst_VkNK3VIonkW88yXCDyJf5Bxl"); };`}
         </Script>
       </head>
